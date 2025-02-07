@@ -1,0 +1,32 @@
+#include <iostream>
+#include <string>
+
+class CameraNetwork {
+public:
+    void linkToCameraNetwork() {
+        std::cout << "Linking to camera network..." << std::endl;
+    }
+
+    void turnOnRestroomCamera() {
+        std::cout << "Restroom camera is now ON." << std::endl;
+    }
+
+    void detectPet() {
+        std::cout << "Pet detected!" << std::endl;
+    }
+
+    void record() {
+        std::cout << "Recording in progress..." << std::endl;
+    }
+};
+
+int main() {
+    CameraNetwork cameraNetwork;
+    cameraNetwork.linkToCameraNetwork();
+    cameraNetwork.turnOnRestroomCamera();
+    cameraNetwork.detectPet();
+    cameraNetwork.record();
+
+    return 0;
+}
+
